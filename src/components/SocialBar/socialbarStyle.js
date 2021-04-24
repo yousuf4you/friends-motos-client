@@ -2,36 +2,67 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
 	root: {
-		backgroundColor: "#272C34",
+		backgroundColor: "rgba(245, 0, 87)",
 		width: "100%",
-		height: "35px",
+		height: "30px",
 		display: "flex",
-		justifyContent: "space-between",
+		justifyContent: "center",
 		alignItems: "center",
 		color: "#2F93E0",
+		position: "relative",
 	},
 	container: {
 		display: "flex",
-		justifyContent: "space-between",
+		justifyContent: "space-around",
 		alignItems: "center",
+		width: "90%",
+		marginLeft: "0 auto",
+		position: "absolute",
+		zIndex: 1,
 	},
+	toolbar2: {
+		width: "100%",
+		background: "rgba(0, 0, 0,.25)",
+		position: "absolute",
+		zIndex: 0,
+	},
+
 	link: {
 		textDecoration: "none",
-		color: "inherit",
+		color: "whitesmoke",
+		fontSize: "14.5px",
+		opacity: ".7",
+		margin: "0 15px 0 15px",
 	},
-	spacingHR: {
-		"& a": {
-			marginRight: theme.spacing(0.8),
-			fontSize: "1px !important",
+	linkSeparator: {
+		color: "whitesmoke",
+		opacity: ".7",
+	},
+	linkHover: {
+		transition: "all .7s",
+		"&:hover": {
+			opacity: 1,
 		},
 	},
-	fb: { color: "#0B84EE" },
-	msg: { color: "#0084ff" },
-	tw: { color: "#55acee" },
-	ig: { color: "#e4405f" },
-	yt: { color: "#cd201f" },
-	mail: { color: "#ff0084" },
-	map: { color: "#FFFC00" },
+
+	spacingHR: {
+		marginTop: "3px",
+		"& a": {
+			marginRight: theme.spacing(1),
+		},
+	},
+	fb: { transition: "all .3s", "&:hover": { color: "#0B84EE" } },
+	tw: { transition: "all .3s", "&:hover": { color: "#55acee" } },
+	msg: { transition: "all .3s", "&:hover": { color: "#0084ff" } },
+	ig: { transition: "all .3s", "&:hover": { color: "#22a6b3" } },
+	yt: { transition: "all .3s", "&:hover": { color: "#cd201f" } },
+	mail: { transition: "all .3s", "&:hover": { color: "#4cd137" } },
+
+	sIcon: {
+		width: "16px",
+		color: "whitesmoke",
+		opacity: ".7",
+	},
 }));
 
 export default useStyles;

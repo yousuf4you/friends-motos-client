@@ -1,7 +1,10 @@
 import React from "react";
-import { Container, Typography, Link } from "@material-ui/core";
+import { Toolbar, Typography, Link } from "@material-ui/core";
+import className from "classname";
 
 import { SiGooglemaps } from "react-icons/si";
+import { GiReturnArrow, GiCash } from "react-icons/gi";
+import { FaPhone } from "react-icons/fa";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import InstagramIcon from "@material-ui/icons/Instagram";
@@ -16,38 +19,77 @@ const SocialBar = () => {
 
 	return (
 		<div className={classes.root}>
-			<Container maxWidth='lg' className={classes.container}>
-				<Typography component='h6'>
+			<Toolbar className={classes.container}>
+				<Typography component='h6' className={classes.linksWrapper}>
+					<Link
+						// TODO: The link must be replaced by the google map link
+						className={className(classes.link, classes.linkHover)}
+						target='_blank'
+						rel='noreferrer'>
+						<FaPhone className={classes.map} /> 01918780770
+					</Link>
+					<span className={classes.linkSeparator}>|</span>
 					<Link
 						// TODO: The link must be replaced by the google map link
 						href='https://google.com'
-						className={classes.link}
+						className={className(classes.link, classes.linkHover)}
 						target='_blank'
 						rel='noreferrer'>
 						<SiGooglemaps className={classes.map} /> Shymnagar, Satkhira
 					</Link>
+					<span className={classes.linkSeparator}>|</span>
+					<Link
+						// TODO: The link must be replaced by the google map link
+						href='https://google.com'
+						className={className(classes.link, classes.linkHover)}
+						target='_blank'
+						rel='noreferrer'>
+						<GiCash className={classes.map} /> Installment Policy
+					</Link>
+					<span className={classes.linkSeparator}>|</span>
+					<Link
+						// TODO: The link must be replaced by the google map link
+						href='https://google.com'
+						className={className(classes.link, classes.linkHover)}
+						target='_blank'
+						rel='noreferrer'>
+						<GiReturnArrow className={classes.map} /> Warranty Policy
+					</Link>
 				</Typography>
 				<div className={classes.spacingHR}>
 					<Link href='https://facebook.com/yousuf4you' target='_blank'>
-						<FacebookIcon className={classes.fb} />
+						<FacebookIcon
+							className={className(classes.sIcon, classes.fb)}
+						/>
 					</Link>
 					<Link href='https://facebook.com/yousuf4you' target='_blank'>
-						<QuestionAnswerIcon className={classes.msg} />
+						<QuestionAnswerIcon
+							className={className(classes.sIcon, classes.msg)}
+						/>
 					</Link>
 					<Link href='https://facebook.com/yousuf4you' target='_blank'>
-						<TwitterIcon className={classes.tw} />
+						<TwitterIcon
+							className={className(classes.sIcon, classes.tw)}
+						/>
 					</Link>
 					<Link href='https://facebook.com/yousuf4you' target='_blank'>
-						<InstagramIcon className={classes.ig} />
+						<InstagramIcon
+							className={className(classes.sIcon, classes.ig)}
+						/>
 					</Link>
 					<Link href='https://facebook.com/yousuf4you' target='_blank'>
-						<YouTubeIcon className={classes.yt} />
+						<YouTubeIcon
+							className={className(classes.sIcon, classes.yt)}
+						/>
 					</Link>
 					<Link href='https://facebook.com/yousuf4you' target='_blank'>
-						<MailIcon className={classes.mail} />
+						<MailIcon
+							className={className(classes.sIcon, classes.mail)}
+						/>
 					</Link>
 				</div>
-			</Container>
+			</Toolbar>
+			<Toolbar className={classes.toolbar2} />
 		</div>
 	);
 };

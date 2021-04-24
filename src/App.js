@@ -1,10 +1,16 @@
 import React from "react";
 
-import SocialBar from "./components/SocialBar/SocialBar";
 import "./index.css";
+import SocialBar from "./components/SocialBar/SocialBar";
+import AppBar from "./components/NavBar/AppBar";
 
 const App = () => {
-	return <SocialBar />;
+	return (
+		<>
+			<SocialBar />
+			<AppBar />
+		</>
+	);
 };
 
 export default App;
