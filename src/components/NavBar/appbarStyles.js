@@ -14,15 +14,17 @@ const useStyles = makeStyles(theme => ({
 		listStyle: "none",
 	},
 	anchor: {
-		textDecoration: "none",
-		color: "whitesmoke",
-		fontFamily: "roboto",
 		fontSize: "17px",
 		cursor: "pointer",
 		display: "inline-block",
 		marginRight: "40px",
 		textTransform: "uppercase",
 		fontWeight: "bold",
+
+		"& a": {
+			textDecoration: "none",
+			color: "whitesmoke",
+		},
 	},
 	//  Search input
 	search: {
