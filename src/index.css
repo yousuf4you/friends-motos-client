@@ -7,6 +7,8 @@
 	--menu-font: "Menu Fonts";
 	--text-shadow-menu: 2px 7px 5px rgba(0, 0, 0, 0.3),
 		0px -4px 10px rgba(255, 255, 255, 0.3);
+	--primary-color: #1976d2;
+	--secondary-color: #f50057;
 }
 
 * {
@@ -21,11 +23,34 @@
 	text-shadow: var(--text-shadow-menu);
 }
 
-.image-gallery-image {
-	width: 100vw !important;
+/* .image-gallery-image {
+	width: 100% !important;
 	height: calc(100vh - 105px) !important;
+	background-size: cover;
+} */
+
+/* .image-gallery-index {
+	font-family: "Krona One" !important;
+} */
+
+.who-am-i {
+	background-color: var(--primary-color);
 }
 
-.image-gallery-index {
-	font-family: arial;
+.MuiCardActions-root {
+	justify-content: space-around;
+}
+
+/* This is for intro img option for sizing */
+.makeStyles-mainContent-35 div div img {
+	width: 100%;
+	height: 100%;
+	transition: all 0.5s;
+}
+.makeStyles-mainContent-135 div div {
+	overflow: hidden;
+}
+
+.makeStyles-mainContent-135 div div img:hover {
+	filter: opacity(80%);
 }

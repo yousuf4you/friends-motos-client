@@ -45,7 +45,7 @@ const NavBar = () => {
 			<div className={classes.grow}>
 				<AppBar
 					position='sticky'
-					color='secondary'
+					color='primary'
 					className={classes.appBar}>
 					<Toolbar className={classes.appBar}>
 						<div>

@@ -2,13 +2,13 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
 	root: {
-		backgroundColor: "rgba(245, 0, 87)",
+		backgroundColor: "#2F93E0",
 		width: "100%",
 		height: "30px",
 		display: "flex",
 		justifyContent: "center",
 		alignItems: "center",
-		color: "#2F93E0",
+		color: "#fff",
 		position: "relative",
 	},
 	container: {
