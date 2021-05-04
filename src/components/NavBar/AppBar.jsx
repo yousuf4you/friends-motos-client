@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "@material-ui/core";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
@@ -50,17 +49,17 @@ const NavBar = () => {
 					className={classes.appBar}>
 					<Toolbar className={classes.appBar}>
 						<div>
-							<Link to='/'>
+							<DomLink to='/'>
 								<img
 									src={logo}
 									alt='tvs motors logo'
 									className={classes.logo}
 								/>
-							</Link>
+							</DomLink>
 						</div>
 						<div className={classes.grow} />
 
-						<div>
+						<div className='custom-link-styling'>
 							<ul className={classes.list}>
 								<li className={classes.anchor}>
 									<DomLink to='/'>Home</DomLink>
@@ -78,8 +77,6 @@ const NavBar = () => {
 									<DomLink to='sells'>Sells</DomLink>
 								</li>
 							</ul>
-
-							{/* FIXME: to be removed */}
 						</div>
 
 						{/* Search input */}

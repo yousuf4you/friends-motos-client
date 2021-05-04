@@ -14,12 +14,13 @@ const useStyles = makeStyles(theme => ({
 		listStyle: "none",
 	},
 	anchor: {
-		fontSize: "17px",
+		fontSize: "18px",
 		cursor: "pointer",
 		display: "inline-block",
 		marginRight: "40px",
 		textTransform: "uppercase",
 		fontWeight: "bold",
+		letterSpacing: "2px",
 
 		"& a": {
 			textDecoration: "none",

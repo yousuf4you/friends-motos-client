@@ -1,5 +1,31 @@
+@font-face {
+	font-family: Menu Fonts;
+	src: url(./assets/fonts/Lalezar-Regular.otf);
+}
+
+:root {
+	--menu-font: "Menu Fonts";
+	--text-shadow-menu: 2px 7px 5px rgba(0, 0, 0, 0.3),
+		0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+/* Menu Styling */
+.custom-link-styling ul li a {
+	font-family: var(--menu-font);
+	text-shadow: var(--text-shadow-menu);
+}
+
+.image-gallery-image {
+	width: 100vw !important;
+	height: calc(100vh - 105px) !important;
+}
+
+.image-gallery-index {
+	font-family: arial;
 }
