@@ -46,38 +46,6 @@ const MostSell = () => {
 							}
 						/>
 					</Grid>
-					<Grid item xs={3}>
-						<Card
-							name={"Motors Name With Model"}
-							img={
-								"https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-							}
-						/>
-					</Grid>
-					<Grid item xs={3}>
-						<Card
-							name={"Motors Name With Model"}
-							img={
-								"https://images.unsplash.com/photo-1558979159-2b18a4070a87?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
-							}
-						/>
-					</Grid>
-					<Grid item xs={3}>
-						<Card
-							name={"Motors Name With Model"}
-							img={
-								"https://images.unsplash.com/photo-1552155634-312b6355173b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1309&q=80"
-							}
-						/>
-					</Grid>
-					<Grid item xs={3}>
-						<Card
-							name={"Motors Name With Model"}
-							img={
-								"https://images.unsplash.com/photo-1558974804-2c2b396b60df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1267&q=80"
-							}
-						/>
-					</Grid>
 				</Grid>
 			</Container>
 		</>

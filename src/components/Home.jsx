@@ -1,8 +1,9 @@
 import Slider from "./Home/Slider";
 import WhoAmI from "./Home/WhoAmI";
 import NewMotors from "./Home/NewMotors";
-import NewSells from "./Home/NewSells";
+import ShortIntro from "./Home/ShortIntro";
 import MostSell from "./Home/MostSell";
+import ShortNote from "./Home/ShortNote";
 
 const Home = () => {
 	return (
@@ -10,8 +11,9 @@ const Home = () => {
 			<Slider />
 			<WhoAmI />
 			<NewMotors />
-			<NewSells />
+			<ShortNote />
 			<MostSell />
+			<ShortIntro />
 		</>
 	);
 };

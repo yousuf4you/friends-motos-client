@@ -7,7 +7,6 @@ const useStyles = makeStyles(theme => ({
 		marginBottom: theme.spacing(4),
 		"& h2": {
 			fontFamily: "Krona One",
-			color: "rgba(0,0,0,.7)",
 			fontSize: "20px",
 			marginBottom: theme.spacing(1.5),
 		},

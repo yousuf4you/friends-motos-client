@@ -12,7 +12,7 @@ const NewSells = () => {
 	return (
 		<>
 			<Container className={classes.root}>
-				<Typography variant='h2' color='textSecondary'>
+				<Typography variant='h2' color='secondary'>
 					Short Intro
 				</Typography>
 				<div className={classes.mainContent}>
