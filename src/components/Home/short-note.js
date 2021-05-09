@@ -23,9 +23,53 @@ const useStyles = makeStyles(theme => ({
 		justifyContent: "center",
 	},
 	container: {
-		width: "50%",
-		height: "60%",
-		background: "gray",
+		width: "65%",
+		height: "75%",
+		display: "flex",
+		justifyContent: "center",
+		alignItems: "center",
+	},
+	content: {
+		// background: "rgba(244, 44, 55, 0.53)",
+		width: "80%",
+		height: "100%",
+		position: "relative",
+		border: "7px solid #2979ff",
+	},
+
+	avatar: {
+		width: theme.spacing(20),
+		height: theme.spacing(20),
+		position: "absolute",
+		top: "26%",
+		left: "-77px",
+		padding: "7px",
+		background: "#2979ff",
+	},
+	textDiv: {
+		position: "absolute",
+		width: "80%",
+		top: "75px",
+		right: "35px",
+	},
+	text: {
+		fontSize: "30px",
+		fontFamily: "Itim",
+		color: "whitesmoke",
+		fontWeight: 300,
+		lineHeight: "35px",
+		textAlign: "center",
+	},
+	intro: {
+		color: "#00e676 !important",
+		fontFamily: "Arial Black",
+		textIndent: "70px",
+		marginTop: theme.spacing(1.5),
+		"& span": {
+			fontFamily: "Itim !important",
+			fontStyle: "italic",
+			color: "#fff",
+		},
 	},
 }));
 

@@ -12,6 +12,9 @@ const useStyles = makeStyles({
 	root: {
 		maxWidth: 345,
 	},
+	count: {
+		color: "yellow !important",
+	},
 });
 
 function MostSellCard({ name, img }) {
@@ -38,7 +41,7 @@ function MostSellCard({ name, img }) {
 				</CardContent>
 			</CardActionArea>
 			<CardActions>
-				<Button size='small' color='primary'>
+				<Button size='small' classes={classes.count}>
 					6 Time
 				</Button>
 				<Button size='small' color='primary'>

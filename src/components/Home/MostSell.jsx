@@ -48,6 +48,9 @@ const MostSell = () => {
 					</Grid>
 				</Grid>
 			</Container>
+			<Container>
+				<hr color='secondary' />
+			</Container>
 		</>
 	);
 };

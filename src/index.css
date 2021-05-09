@@ -42,16 +42,23 @@
 }
 
 /* This is for intro img option for sizing */
-.makeStyles-mainContent-40 div div img {
+.ShortIntro__mainContent div div img {
 	width: 100%;
 	height: 100%;
 	transition: all 0.5s;
-	padding: 7px;
+	padding: 5px;
+	background-color: var(--secondary-color);
 }
-.makeStyles-mainContent-40 div div {
+.ShortIntro__mainContent div div {
 	overflow: hidden;
 }
 
-.makeStyles-mainContent-40 div div img:hover {
+.ShortIntro__mainContent div div img:hover {
 	filter: opacity(80%);
+}
+
+/*  Short Note  */
+.slick-slide {
+	width: 80%;
+	height: 90%;
 }
