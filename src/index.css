@@ -1,64 +1,13 @@
-@font-face {
-	font-family: Menu Fonts;
-	src: url(./assets/fonts/Lalezar-Regular.otf);
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-:root {
-	--menu-font: "Menu Fonts";
-	--text-shadow-menu: 2px 7px 5px rgba(0, 0, 0, 0.3),
-		0px -4px 10px rgba(255, 255, 255, 0.3);
-	--primary-color: #1976d2;
-	--secondary-color: #f50057;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-/* Menu Styling */
-.custom-link-styling ul li a {
-	font-family: var(--menu-font);
-	text-shadow: var(--text-shadow-menu);
-}
-
-/* .image-gallery-image {
-	width: 100% !important;
-	height: calc(100vh - 105px) !important;
-	background-size: cover;
-} */
-
-/* .image-gallery-index {
-	font-family: "Krona One" !important;
-} */
-
-.who-am-i {
-	background-color: var(--primary-color);
-}
-
-.MuiCardActions-root {
-	justify-content: space-around;
-}
-
-/* This is for intro img option for sizing */
-.ShortIntro__mainContent div div img {
-	width: 100%;
-	height: 100%;
-	transition: all 0.5s;
-	padding: 5px;
-	background-color: var(--secondary-color);
-}
-.ShortIntro__mainContent div div {
-	overflow: hidden;
-}
-
-.ShortIntro__mainContent div div img:hover {
-	filter: opacity(80%);
-}
-
-/*  Short Note  */
-.slick-slide {
-	width: 80%;
-	height: 90%;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
