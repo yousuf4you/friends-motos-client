@@ -1,9 +1,10 @@
 import React from "react";
+import Landing from "./components/Landing/Landing";
 
 const App = () => {
 	return (
 		<div>
-			<h1>This is App Component</h1>
+			<Landing />
 		</div>
 	);
 };
