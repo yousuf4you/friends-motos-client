@@ -1,3 +1,10 @@
+/* !NOTE: this is Landing page title fonts */ /* name: 'Pattaya' */
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+/* !NOTE: This is Josefin's Slab, all p font  without bold */ /* name: 'Josefin Slab'*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap");
+/* !NOTE: This is Josefin's Sans, all p font  with bold */ /* name: 'Josefin Sans'*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
 :root {
 	--font-size: 62.5%;
 }
@@ -11,4 +18,40 @@
 html,
 body {
 	font-family: Helvetica;
+}
+
+.text-shadow {
+	text-shadow: 0px 0px 0 rgb(231, 231, 231), -1px 1px 0 rgb(207, 207, 207),
+		-2px 2px 0 rgb(183, 183, 183), -3px 3px 2px rgba(87, 81, 81, 0.26),
+		-3px 3px 1px rgba(87, 81, 81, 0.5), 0px 0px 2px rgba(87, 81, 81, 0.2);
+}
+
+/* !NOTE: Landing page icons styling */
+.facebook:hover svg,
+.facebook:hover {
+	color: #3b5999;
+	border-color: #3b5999;
+}
+.twitter:hover svg,
+.twitter:hover {
+	color: #55acee;
+	border-color: #55acee;
+}
+
+.youtube:hover svg,
+.youtube:hover {
+	color: #ff0084;
+	border-color: #ff0084;
+}
+
+.phone:hover svg,
+.phone:hover {
+	color: #131418;
+	border-color: #131418;
+}
+
+.mail:hover svg,
+.mail:hover {
+	color: #00c300;
+	border-color: #00c300;
 }

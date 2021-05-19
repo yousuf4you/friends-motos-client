@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
 		display: "flex",
 		justifyContent: "space-between",
 		alignItems: "center",
-		marginBottom: theme.spacing(3),
+		// marginBottom: theme.spacing(3),
 	},
 	brandLogo: {
 		width: "45%",
@@ -76,12 +76,43 @@ const useStyles = makeStyles(theme => ({
 		margin: "0 auto",
 		display: "flex",
 		flexWrap: "wrap",
-		alignContent: "space-between",
+		alignContent: "space-around",
 	},
 	contentDiv: {
 		width: "100%",
-		height: "25%",
-		background: "#fff", // to be removed
+		height: "23%",
+		background: "rgba(0, 0, 0, .2)",
+		display: "flex",
+		justifyContent: "space-between",
+		alignItems: "center",
+		padding: "15px",
+		borderRadius: "4px",
+		boxShadow:
+			"rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px",
+	},
+	iconDiv: {
+		padding: "10px 13px",
+		background: "rgba(255, 255, 255, .1)",
+		marginRight: theme.spacing(3),
+		borderRadius: "7px",
+	},
+	icon: {
+		// padding: "20px",
+		color: "rgba(255, 255, 255, .6)",
+		fontSize: "2.8rem",
+	},
+	informationContent: {
+		overflow: "hidden",
+		"& > h6": {
+			color: "#dedede",
+			fontWeight: "450",
+			fontSize: "19px",
+			fontFamily: "Pattaya",
+		},
+		"& > p": {
+			color: "#fff9",
+			fontFamily: "Josefin Sans",
+		},
 	},
 	loginWrapper: {
 		width: "40%",
@@ -92,3 +123,13 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default useStyles;
+
+/*
+	text-align: center;
+   margin-bottom: 24px;
+   color: #;
+   font-size: 1.3rem;
+   font-family: 'Josefin Sans';
+   font-weight: 600;
+   letter-spacing: 4px;
+*/

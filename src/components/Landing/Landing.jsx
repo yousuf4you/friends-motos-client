@@ -1,9 +1,8 @@
 import React from "react";
-import { Box, Container } from "@material-ui/core";
+import { Box, Container, Typography } from "@material-ui/core";
 import Motors from "@material-ui/icons/LocalMall";
 import Parts from "@material-ui/icons/Build";
 import Servicing from "@material-ui/icons/BeachAccess";
-import ClassName from "classname";
 
 import useStyles from "./landing-styles";
 import Signin from "./Login";
@@ -35,18 +34,70 @@ const Landing = () => {
 									<img src={logo} alt='main logo' />
 								</div>
 							</header>
+							<p
+								className='text-shadow'
+								style={{
+									textAlign: "center",
+									marginBottom: "24px",
+									fontWeight: "bold",
+									fontSize: "1.1rem",
+									color: "#f1f1f1",
+									letterSpacing: "4px",
+									fontFamily: "arial black",
+								}}>
+								AUTHORIZED REPRESENTATIVE OF <br /> TVS BRAND
+							</p>
 							<div className={classes.information}>
 								<div className={classes.contentDiv}>
-									<Motors fontSize='large' color='white-500' />
-									<div className={classes.informationContent}></div>
+									<div className={classes.iconDiv}>
+										<Motors className={classes.icon} />
+									</div>
+									<div className={classes.informationContent}>
+										{/* TODO: this line to be modified */}
+										<Typography variant='h6'>
+											All Authorized Motors of TVS Brand
+										</Typography>
+										<Typography variant='p' component='p'>
+											{/* TODO: this line to be modified */}
+											Lorem ipsum dolor sit amet consectetur
+											adipisicing elit. Culpa nisi aspernatur quis
+											incidunt optio tenetur nemo at.
+										</Typography>
+									</div>
 								</div>
 								<div className={classes.contentDiv}>
-									<Parts fontSize='large' />
-									<div className={classes.informationContent}></div>
+									<div className={classes.iconDiv}>
+										<Parts className={classes.icon} />
+									</div>
+									<div className={classes.informationContent}>
+										{/* TODO: this line to be modified */}
+										<Typography variant='h6'>
+											All Genuine Authorized Parts
+										</Typography>
+										{/* TODO: this line to be modified */}
+										<Typography variant='p' component='p'>
+											Lorem ipsum dolor sit amet consectetur
+											adipisicing elit. Culpa nisi aspernatur quis
+											incidunt optio tenetur nemo at.
+										</Typography>
+									</div>
 								</div>
 								<div className={classes.contentDiv}>
-									<Servicing fontSize='large' />
-									<div className={classes.informationContent}></div>
+									<div className={classes.iconDiv}>
+										<Servicing className={classes.icon} />
+									</div>
+									<div className={classes.informationContent}>
+										{/* TODO: this line to be modified */}
+										<Typography variant='h6'>
+											We Provide Servicing and Warranty
+										</Typography>
+										{/* TODO: this line to be modified */}
+										<Typography variant='p' component='p'>
+											Lorem ipsum dolor sit amet consectetur
+											adipisicing elit. Culpa nisi aspernatur quis
+											incidunt optio tenetur nemo at.
+										</Typography>
+									</div>
 								</div>
 							</div>
 						</div>

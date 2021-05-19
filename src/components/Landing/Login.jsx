@@ -8,19 +8,14 @@ import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-
-function Copyright() {
-	return (
-		<Typography variant='body2' color='textSecondary' align='center'>
-			{"Copyright © "}
-			<Link color='inherit' href='https://material-ui.com/'>
-				Your Website
-			</Link>{" "}
-			{new Date().getFullYear()}
-			{"."}
-		</Typography>
-	);
-}
+import {
+	FiFacebook,
+	FiTwitter,
+	FiYoutube,
+	FiMail,
+	FiPhone,
+} from "react-icons/fi";
+import ClassName from "classname";
 
 const useStyles = makeStyles(theme => ({
 	paper: {
@@ -56,7 +51,65 @@ const useStyles = makeStyles(theme => ({
 	only: {
 		color: theme.palette.secondary,
 	},
+	footer: {
+		width: "100%",
+		height: "auto",
+		textAlign: "center",
+		marginBottom: theme.spacing(4),
+	},
+	footerHeader: {
+		fontFamily: "Pattaya",
+		marginBottom: theme.spacing(1),
+	},
+	icon: {
+		display: "inline-block",
+		padding: "10px",
+		borderRadius: "50% 20% / 10% 40%;",
+		margin: "10px",
+		border: "1px solid #0000003b",
+		cursor: "pointer",
+		transition: "all .5s",
+		"& > svg": {
+			color: "gray",
+			width: "1.2em",
+			height: "1.2em",
+		},
+	},
 }));
+
+// !NOTE: footer component
+function Copyright({ main, footerHeader, icon }) {
+	return (
+		<div className={main}>
+			<Typography
+				variant='h6'
+				component='h6'
+				color='secondary'
+				className={footerHeader}>
+				Contact with us vie
+			</Typography>
+			<div>
+				<div>
+					<div className={ClassName(icon, "facebook")}>
+						<FiFacebook />
+					</div>
+					<div className={ClassName(icon, "twitter")}>
+						<FiTwitter />
+					</div>
+					<div className={ClassName(icon, "youtube")}>
+						<FiYoutube />
+					</div>
+					<div className={ClassName(icon, "mail")}>
+						<FiMail />
+					</div>
+					<div className={ClassName(icon, "phone")}>
+						<FiPhone />
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+}
 
 export default function SignIn() {
 	const classes = useStyles();
@@ -75,7 +128,7 @@ export default function SignIn() {
 					</Typography>
 					<div className={classes.border} />
 				</div>
-				<form className={classes.form} noValidate>
+				<form className={classes.form} noValidate method='post'>
 					<TextField
 						variant='outlined'
 						margin='normal'
@@ -104,7 +157,7 @@ export default function SignIn() {
 						variant='contained'
 						color='primary'
 						className={classes.submit}>
-						Sign In
+						Log In
 					</Button>
 					<Grid container>
 						<Grid item xs>
@@ -116,7 +169,24 @@ export default function SignIn() {
 				</form>
 			</div>
 			<Box mt={8}>
-				<Copyright />
+				<Copyright
+					main={classes.footer}
+					footerHeader={classes.footerHeader}
+					iconDiv={classes.iconDiv}
+					iconContainer={classes.iconContainer}
+					icon={classes.icon}
+				/>
+				<Typography variant='body2' color='textSecondary' align='center'>
+					{"Copyright © "}
+					<Link
+						color='inherit'
+						href='https://facebook.com/yousuf4you'
+						target='_blank'>
+						YOUSUF
+					</Link>{" "}
+					{new Date().getFullYear()}
+					{"."}
+				</Typography>
 			</Box>
 		</Container>
 	);
