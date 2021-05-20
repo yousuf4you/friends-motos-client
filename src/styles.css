@@ -4,6 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap");
 /* !NOTE: This is Josefin's Sans, all p font  with bold */ /* name: 'Josefin Sans'*/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+/* !NOTE: menu font   */ /* name: Chela One*/
+@import url("https://fonts.googleapis.com/css2?family=Chela+One&display=swap");
 
 :root {
 	--font-size: 62.5%;

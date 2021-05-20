@@ -3,7 +3,7 @@ import React from "react";
 const Dashboard = () => {
 	return (
 		<div>
-			<h2>The section under constriction.</h2>
+			<h1>The Dashboard is under upgrading.</h1>
 		</div>
 	);
 };
