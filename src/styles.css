@@ -6,6 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 /* !NOTE: menu font   */ /* name: Chela One*/
 @import url("https://fonts.googleapis.com/css2?family=Chela+One&display=swap");
+/* !NOTE: Motors Component header font and all header font, name: Abril Fatface */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 :root {
 	--font-size: 62.5%;
@@ -20,6 +22,7 @@
 html,
 body {
 	font-family: Helvetica;
+	background-color: #ffffff69;
 }
 
 .text-shadow {
@@ -56,4 +59,9 @@ body {
 .mail:hover {
 	color: #00c300;
 	border-color: #00c300;
+}
+
+/* !NOTE: motors element  */
+.makeStyles-root-20 {
+	margin: 0 auto;
 }
